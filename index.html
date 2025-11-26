@@ -244,57 +244,65 @@
             flex-wrap: wrap;
         }
 
-        /* About Section */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
+/* About Section - VERSÃO CORRIGIDA */
+.about-content {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-        .about-text p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
+.about-text {
+    text-align: center;
+    width: 100%;
+}
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 30px;
-        }
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .info-item {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .info-item:hover {
-            transform: translateY(-5px);
-        }
+.info-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: left;
+}
 
-        .info-item strong {
-            color: var(--primary);
-        }
+.info-item:hover {
+    transform: translateY(-5px);
+}
 
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
+.info-item strong {
+    color: var(--primary);
+}
 
-        .skill-tag {
-            background: var(--primary);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
         /* Subjects Section */
         .subjects-section {
             background: #f8f9fa;
